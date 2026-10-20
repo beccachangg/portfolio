@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marketing &amp; Social Media · Rebecca Chang</title>
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,400;1,9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="index.html"><span class="spark">✦</span> rebecca chang</a>
+  <nav class="nav" id="nav">
+    <a href="index.html">about</a>
+    <a href="resume.html">resume</a>
+    <a href="coursework.html">coursework</a>
+    <a href="marketing.html" class="active">marketing</a>
+    <a href="photography.html">photography</a>
+  </nav>
+  <a class="btn btn-solid header-cta" href="mailto:rchang615@gmail.com">say hi ✉</a>
+  <button class="menu-btn" aria-label="menu" aria-expanded="false">☰</button>
+  <div class="progress" id="progress"></div>
+</header>
+
+<main>
+
+  <!-- ================= PAGE HEAD ================= -->
+  <section class="page-head" style="padding-bottom:clamp(40px,6vw,70px)">
+    <div class="ghost" aria-hidden="true">content</div>
+    <div class="wrap">
+      <span class="eyebrow">the work</span>
+      <h1>marketing<br>&amp; <em>social media</em></h1>
+      <p class="lead">lifestyle, wellness and self-care content — skincare, haircare and fashion — made for brand partners, alongside the campus social work i do at the cal student store.</p>
+      <div class="btn-row">
+        <a class="btn btn-solid" href="#showcase">see the content <span class="arr">↓</span></a>
+        <a class="btn btn-ghost" href="https://instagram.com/itsbeccachang" target="_blank" rel="noopener">instagram ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STATS ================= -->
+  <section class="wash-brown" style="padding-block:clamp(40px,6vw,70px)">
+    <div class="wrap stats">
+      <div class="stat reveal"><b data-count="8">8</b><span>brands i've worked with</span></div>
+      <div class="stat reveal" style="--d:.08s"><b data-count="5" data-suffix="+">5+</b><span>brand partnerships</span></div>
+    </div>
+  </section>
+
+  <!-- ================= BRANDS + SHOWCASE (shared filter) ================= -->
+  <section id="brands">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">brands i've worked with</span>
+        <h2>the <em>partners</em></h2>
+        <p>sorted by category. use the filters to focus on one — the stories below follow along.</p>
+      </div>
+
+      <div class="chips reveal" data-filter-group="mk" style="margin-bottom:1.6rem">
+        <button class="chip on" data-filter="all">all</button>
+        <button class="chip" data-filter="beauty">skincare &amp; beauty</button>
+        <button class="chip" data-filter="style">fashion &amp; athletic</button>
+        <button class="chip" data-filter="housing">housing</button>
+      </div>
+
+      <div class="brand-group" data-scope="mk" data-cat="beauty">
+        <h3>skincare &amp; beauty</h3>
+        <div class="brands">
+          <a class="brand reveal" href="https://www.mariobadescu.com/" target="_blank" rel="noopener"><span class="go">↗</span><b>Mario Badescu</b><small>skincare</small></a>
+          <a class="brand reveal" style="--d:.05s" href="https://goodmolecules.com/" target="_blank" rel="noopener"><span class="go">↗</span><b>Good Molecules</b><small>skincare</small></a>
+          <a class="brand reveal" style="--d:.1s" href="https://gimmebeauty.com/" target="_blank" rel="noopener"><span class="go">↗</span><b>Gimme Beauty</b><small>beauty</small></a>
+          <a class="brand reveal" style="--d:.15s" href="https://jolieskinco.com/" target="_blank" rel="noopener"><span class="go">↗</span><b>Jolie</b><small>skincare</small></a>
+        </div>
+      </div>
+
+      <div class="brand-group" data-scope="mk" data-cat="style">
+        <h3>fashion &amp; athletic</h3>
+        <div class="brands">
+          <a class="brand reveal" href="https://www.nike.com/" target="_blank" rel="noopener"><span class="go">↗</span><b>Nike</b><small>athletic wear</small></a>
+          <a class="brand reveal" style="--d:.05s" href="https://www.urbanoutfitters.com/" target="_blank" rel="noopener"><span class="go">↗</span><b>Urban Outfitters</b><small>fashion &amp; lifestyle</small></a>
+        </div>
+      </div>
+
+      <div class="brand-group" data-scope="mk" data-cat="housing">
+        <h3>housing</h3>
+        <div class="brands">
+          <a class="brand reveal" href="https://aceberkeley.com/" target="_blank" rel="noopener"><span class="go">↗</span><b>Ace Berkeley</b><small>housing</small></a>
+          <a class="brand reveal" style="--d:.05s" href="https://xucyunruwway.com/" target="_blank" rel="noopener"><span class="go">↗</span><b>Xučyun Ruwway</b><small>housing</small></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="showcase" class="wash">
+    <div class="wrap">
+      <div class="rail-bar reveal">
+        <div class="sec-head" style="margin-bottom:0">
+          <span class="eyebrow">content showcase</span>
+          <h2>stories &amp; posts <em>for brands</em></h2>
+        </div>
+        <div style="display:flex;gap:.6rem">
+          <button class="round" data-rail-target="stories" data-dir="-1" aria-label="previous">❮</button>
+          <button class="round" data-rail-target="stories" data-dir="1" aria-label="next">❯</button>
+        </div>
+      </div>
+
+      <div class="rail" id="stories">
+        <figure class="story" data-scope="mk" data-cat="beauty">
+          <div class="phone"><div class="photo" data-label="story 1&#10;9:16" style="--r:9/16" data-zoom><img src="images/story1.JPG" alt="gimme beauty instagram story"></div></div>
+          <figcaption>gimme beauty</figcaption>
+        </figure>
+        <figure class="story" data-scope="mk" data-cat="beauty">
+          <div class="phone"><div class="photo" data-label="story 2&#10;9:16" style="--r:9/16" data-zoom><img src="images/story2.JPG" alt="good molecules instagram story"></div></div>
+          <figcaption>good molecules</figcaption>
+        </figure>
+        <figure class="story" data-scope="mk" data-cat="beauty">
+          <div class="phone"><div class="photo" data-label="story 3&#10;9:16" style="--r:9/16" data-zoom><img src="images/story3.JPG" alt="mario badescu instagram story"></div></div>
+          <figcaption>mario badescu</figcaption>
+        </figure>
+        <figure class="story" data-scope="mk" data-cat="style">
+          <div class="phone"><div class="photo" data-label="story 4&#10;9:16" style="--r:9/16" data-zoom><img src="images/story4.JPG" alt="urban outfitters x nike instagram story"></div></div>
+          <figcaption>urban outfitters x nike</figcaption>
+        </figure>
+        <figure class="story" data-scope="mk" data-cat="style">
+          <div class="phone"><div class="photo" data-label="story 5&#10;9:16" style="--r:9/16" data-zoom><img src="images/story5.JPG" alt="nike instagram story"></div></div>
+          <figcaption>nike</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROCESS (tabs) ================= -->
+  <section>
+    <div class="wrap" data-tabs>
+      <div class="sec-head reveal">
+        <span class="eyebrow">how i work</span>
+        <h2>research. create. <em>measure.</em></h2>
+        <p>the eecs side of my marketing — every post has a reason behind it.</p>
+      </div>
+
+      <div class="tabs reveal">
+        <button class="chip on" data-tab="research">01 research</button>
+        <button class="chip" data-tab="create">02 create</button>
+        <button class="chip" data-tab="measure">03 measure</button>
+      </div>
+
+      <div class="tab-panel solo on" data-panel="research">
+        <div>
+          <p>before i post, i look at the landscape. my python seo tool scrapes 10+ competitor pages and benchmarks word count, readability, keyword density and heading structure. tf-idf surfaces the keyword gaps worth owning, and google trends adds 12 months of interest data and rising queries.</p>
+          <div class="chips"><span class="tag">python</span><span class="tag">beautifulsoup</span><span class="tag">scikit-learn</span><span class="tag">google trends</span></div>
+          <a class="link" href="https://github.com/beccachangg/seo-analysis-tool" target="_blank" rel="noopener">view the seo tool on github ↗</a>
+        </div>
+      </div>
+      <div class="tab-panel solo" data-panel="create">
+        <div>
+          <p>i build monthly content calendars around campus events, product launches and seasonal campaigns, then shoot and edit short-form video and static content in adobe creative cloud, canva and capcut.</p>
+          <div class="chips"><span class="tag">content calendars</span><span class="tag">adobe creative cloud</span><span class="tag">canva</span><span class="tag">capcut</span></div>
+        </div>
+      </div>
+      <div class="tab-panel solo" data-panel="measure">
+        <div>
+          <p>everything gets tracked. i analyze content performance metrics to decide what to repeat and what to cut, and i plan digital ad campaigns that drive in-store and online engagement.</p>
+          <div class="chips"><span class="tag">performance metrics</span><span class="tag">digital ads</span><span class="tag">strategy iteration</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <section style="padding-top:0">
+    <div class="cta" style="padding:clamp(56px,9vw,110px) 20px">
+      <span class="eyebrow">collab?</span>
+      <h2>interested in <em>collaborating?</em></h2>
+      <p>i'm always open to working with brands that align with my values and content focus. let's create something amazing together.</p>
+      <div class="btn-row">
+        <a class="btn btn-light" href="mailto:rchang615@gmail.com">get in touch ✉</a>
+        <button class="btn btn-outline-light" data-copy="rchang615@gmail.com">copy my email</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap foot">
+    <a class="logo" href="index.html"><span class="spark">✦</span> rebecca chang</a>
+    <div class="foot-links">
+      <a href="mailto:rchang615@gmail.com">email</a>
+      <a href="https://github.com/beccachangg" target="_blank" rel="noopener">github</a>
+      <a href="https://linkedin.com/in/rebecca-chang-573b2a1b0/" target="_blank" rel="noopener">linkedin</a>
+      <a href="https://instagram.com/itsbeccachang" target="_blank" rel="noopener">instagram</a>
+    </div>
+    <p>© 2026 rebecca chang · berkeley, ca</p>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-label="photo viewer"><button class="lb-close" aria-label="close">✕</button><button class="lb-nav prev" aria-label="previous photo">❮</button><figure><img alt=""><figcaption id="lb-cap"></figcaption></figure><button class="lb-nav next" aria-label="next photo">❯</button></div>
+</body>
+</html>

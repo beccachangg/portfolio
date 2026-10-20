@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coursework · Rebecca Chang</title>
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,400;1,9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="index.html"><span class="spark">✦</span> rebecca chang</a>
+  <nav class="nav" id="nav">
+    <a href="index.html">about</a>
+    <a href="resume.html">resume</a>
+    <a href="coursework.html" class="active">coursework</a>
+    <a href="marketing.html">marketing</a>
+    <a href="photography.html">photography</a>
+  </nav>
+  <a class="btn btn-solid header-cta" href="mailto:rchang615@gmail.com">say hi ✉</a>
+  <button class="menu-btn" aria-label="menu" aria-expanded="false">☰</button>
+  <div class="progress" id="progress"></div>
+</header>
+
+<main>
+
+  <section class="page-head" style="padding-bottom:clamp(24px,4vw,40px)">
+    <div class="ghost" aria-hidden="true">class</div>
+    <div class="wrap">
+      <span class="eyebrow">the nerdy side</span>
+      <h1>coursework</h1>
+      <p class="lead">the cs/eecs courses i took at uc berkeley. filter by type or search for a course.</p>
+    </div>
+  </section>
+
+  <section class="wash" style="padding-top:clamp(24px,4vw,40px)">
+    <div class="wrap">
+      <div class="cw-tools">
+        <div class="chips" id="cw-chips">
+          <button class="chip on" data-cw="all">all</button>
+          <button class="chip" data-cw="cs">cs</button>
+          <button class="chip" data-cw="eecs">eecs</button>
+          <button class="chip" data-cw="gen">science &amp; ethics</button>
+        </div>
+        <input class="search" id="course-search" type="search" placeholder="search a course…" aria-label="search courses">
+        <span class="count" id="cw-count">17 courses</span>
+      </div>
+
+      <div class="notes">
+
+        <article class="note-card reveal">
+          <h3>spring 2026</h3>
+          <ul>
+            <li class="course" data-cat="cs"><b>CS 168</b><span>Introduction to the Internet: Architecture and Protocols</span></li>
+          </ul>
+        </article>
+
+        <article class="note-card reveal" style="--d:.06s">
+          <h3>fall 2025</h3>
+          <ul>
+            <li class="course" data-cat="cs"><b>CS 164</b><span>Programming Languages and Compilers</span></li>
+            <li class="course" data-cat="cs"><b>CS 169A</b><span>Introduction to Software Engineering</span></li>
+          </ul>
+        </article>
+
+        <article class="note-card reveal" style="--d:.12s">
+          <h3>spring 2025</h3>
+          <ul>
+            <li class="course" data-cat="cs"><b>CS 161</b><span>Computer Security</span></li>
+            <li class="course" data-cat="cs"><b>CS 189</b><span>Introduction to Machine Learning</span></li>
+          </ul>
+        </article>
+
+        <article class="note-card reveal">
+          <h3>fall 2024</h3>
+          <ul>
+            <li class="course" data-cat="cs"><b>CS 188</b><span>Introduction to Artificial Intelligence</span></li>
+            <li class="course" data-cat="eecs"><b>EECS 16B</b><span>Designing Information Devices and Systems II</span></li>
+            <li class="course" data-cat="gen"><b>ENGIN 125</b><span>Ethics, Engineering, and Society</span></li>
+          </ul>
+        </article>
+
+        <article class="note-card reveal" style="--d:.06s">
+          <h3>summer 2024</h3>
+          <ul>
+            <li class="course" data-cat="cs"><b>CS 70</b><span>Discrete Mathematics and Probability Theory</span></li>
+          </ul>
+        </article>
+
+        <article class="note-card reveal" style="--d:.12s">
+          <h3>spring 2024</h3>
+          <ul>
+            <li class="course" data-cat="cs"><b>CS 186</b><span>Introduction to Database Systems</span></li>
+            <li class="course" data-cat="gen"><b>EPS 103</b><span>Introduction to Aquatic and Marine Geochemistry</span></li>
+          </ul>
+        </article>
+
+        <article class="note-card reveal">
+          <h3>fall 2023</h3>
+          <ul>
+            <li class="course" data-cat="cs"><b>CS 61C</b><span>Great Ideas of Computer Architecture (Machine Structures)</span></li>
+            <li class="course" data-cat="gen"><b>PHYS 7B</b><span>Physics for Scientists and Engineers</span></li>
+          </ul>
+        </article>
+
+        <article class="note-card reveal" style="--d:.06s">
+          <h3>spring 2023</h3>
+          <ul>
+            <li class="course" data-cat="cs"><b>CS 61B</b><span>Data Structures</span></li>
+            <li class="course" data-cat="eecs"><b>EECS 16A</b><span>Designing Information Devices and Systems I</span></li>
+            <li class="course" data-cat="gen"><b>PHYS 7A</b><span>Physics for Scientists and Engineers</span></li>
+          </ul>
+        </article>
+
+        <article class="note-card reveal" style="--d:.12s">
+          <h3>fall 2022</h3>
+          <ul>
+            <li class="course" data-cat="cs"><b>CS 61A</b><span>The Structure and Interpretation of Computer Programs</span></li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap foot">
+    <a class="logo" href="index.html"><span class="spark">✦</span> rebecca chang</a>
+    <div class="foot-links">
+      <a href="mailto:rchang615@gmail.com">email</a>
+      <a href="https://github.com/beccachangg" target="_blank" rel="noopener">github</a>
+      <a href="https://linkedin.com/in/rebecca-chang-573b2a1b0/" target="_blank" rel="noopener">linkedin</a>
+      <a href="https://instagram.com/itsbeccachang" target="_blank" rel="noopener">instagram</a>
+    </div>
+    <p>© 2026 rebecca chang · berkeley, ca</p>
+  </div>
+</footer>
+</body>
+</html>

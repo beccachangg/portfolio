@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume · Rebecca Chang</title>
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,400;1,9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="index.html"><span class="spark">✦</span> rebecca chang</a>
+  <nav class="nav" id="nav">
+    <a href="index.html">about</a>
+    <a href="resume.html" class="active">resume</a>
+    <a href="coursework.html">coursework</a>
+    <a href="marketing.html">marketing</a>
+    <a href="photography.html">photography</a>
+  </nav>
+  <a class="btn btn-solid header-cta" href="mailto:rchang615@gmail.com">say hi ✉</a>
+  <button class="menu-btn" aria-label="menu" aria-expanded="false">☰</button>
+  <div class="progress" id="progress"></div>
+</header>
+
+<main>
+
+  <section class="page-head" style="padding-bottom:clamp(24px,4vw,40px)">
+    <div class="ghost" aria-hidden="true">resume</div>
+    <div class="wrap">
+      <span class="eyebrow">the details</span>
+      <h1>resume</h1>
+      <p class="lead">click any card to open it. filter my experience by marketing, tech or other.</p>
+      <div class="btn-row">
+        <!-- put your PDF in this folder with this exact name -->
+        <a class="btn btn-solid" href="Rebecca-Chang-Resume.pdf" download>download pdf ↓</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EXPERIENCE ================= -->
+  <section class="wash" style="padding-top:clamp(36px,5vw,60px)">
+    <div class="wrap">
+      <div class="rail-bar reveal" style="margin-bottom:1.6rem">
+        <div class="sec-head" style="margin-bottom:0"><h2>experience</h2></div>
+        <div class="chips" data-filter-group="rs">
+          <button class="chip on" data-filter="all">all</button>
+          <button class="chip" data-filter="marketing">marketing</button>
+          <button class="chip" data-filter="tech">tech</button>
+          <button class="chip" data-filter="other">other</button>
+        </div>
+      </div>
+
+      <div class="stack">
+
+        <article class="job open reveal" data-scope="rs" data-cat="marketing">
+          <button class="job-head" aria-expanded="true">
+            <span class="job-date">apr 2026 – present</span>
+            <span class="job-title"><b>Cal Student Store</b><span>Social Media Manager</span></span>
+            <span class="plus">+</span>
+          </button>
+          <div class="job-body"><div><ul>
+            <li>Manage organic social media presence for one of the UC Berkeley campus's flagship retail brands, overseeing content strategy across Instagram and TikTok.</li>
+            <li>Develop and execute monthly content calendars aligned with campus events, product launches, and seasonal campaigns.</li>
+            <li>Produce and edit short-form video and static content using Adobe Creative Cloud, Canva, and CapCut.</li>
+            <li>Plan and manage digital ad campaigns to drive in-store and online engagement.</li>
+            <li>Track and analyze content performance metrics to inform ongoing strategy.</li>
+          </ul></div></div>
+        </article>
+
+        <article class="job reveal" data-scope="rs" data-cat="marketing">
+          <button class="job-head" aria-expanded="false">
+            <span class="job-date">aug 2024 – present</span>
+            <span class="job-title"><b>The Black Sheep</b><span>Student Ambassador</span></span>
+            <span class="plus">+</span>
+          </button>
+          <div class="job-body"><div><ul>
+            <li>Represented Ace Berkeley and Xučyun Ruwway Apartments at community events, university functions, and housing fairs while implementing innovative social media campaigns that showcase the properties' unique features and community.</li>
+          </ul></div></div>
+        </article>
+
+        <article class="job reveal" data-scope="rs" data-cat="other">
+          <button class="job-head" aria-expanded="false">
+            <span class="job-date">jan 2026 – apr 2026</span>
+            <span class="job-title"><b>Cal Student Store</b><span>Retail Associate</span></span>
+            <span class="plus">+</span>
+          </button>
+          <div class="job-body"><div><ul>
+            <li>Assisted 50+ customers daily with product recommendations, demonstrating strong interpersonal and communication skills.</li>
+            <li>Processed transactions accurately using the POS system in a fast-paced retail environment.</li>
+            <li>Promoted campus events and store promotions to drive foot traffic and product awareness.</li>
+          </ul></div></div>
+        </article>
+
+        <article class="job reveal" data-scope="rs" data-cat="other">
+          <button class="job-head" aria-expanded="false">
+            <span class="job-date">jan 2025 – feb 2025</span>
+            <span class="job-title"><b>Center for Social Dynamics</b><span>Behavior Specialist</span></span>
+            <span class="plus">+</span>
+          </button>
+          <div class="job-body"><div><ul>
+            <li>Implemented individualized treatment plans using Applied Behavior Analysis (ABA) therapy to help clients develop essential skills and reduce challenging behaviors.</li>
+            <li>Worked directly with children, adolescents, and their families to create supportive environments that foster growth, independence, and positive behavioral change.</li>
+          </ul></div></div>
+        </article>
+
+        <article class="job reveal" data-scope="rs" data-cat="tech">
+          <button class="job-head" aria-expanded="false">
+            <span class="job-date">may 2024 – oct 2024</span>
+            <span class="job-title"><b>The Coder School</b><span>Code Coach</span></span>
+            <span class="plus">+</span>
+          </button>
+          <div class="job-body"><div><ul>
+            <li>Taught classes of 10+ students introducing Python and web development.</li>
+            <li>Worked with multiple students individually to build motivation and strengthen critical thinking skills.</li>
+          </ul></div></div>
+        </article>
+
+        <article class="job reveal" data-scope="rs" data-cat="marketing">
+          <button class="job-head" aria-expanded="false">
+            <span class="job-date">oct 2023 – aug 2024</span>
+            <span class="job-title"><b>OnCampus Advertising</b><span>Brand Ambassador</span></span>
+            <span class="plus">+</span>
+          </button>
+          <div class="job-body"><div><ul>
+            <li>Collaborated with brands including Samsung and L'Oréal to engage students on campus and build their interest in each brand's products.</li>
+          </ul></div></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">things i built</span>
+        <h2>projects</h2>
+      </div>
+
+      <div class="proj-grid">
+
+        <article class="job compact reveal">
+          <button class="job-head" aria-expanded="false">
+            <span class="job-title"><span class="job-date">jan 2026</span><b>SEO &amp; Competitor Content Analysis Tool</b>
+              <span class="chips"><span class="tag">Python</span><span class="tag">BeautifulSoup</span><span class="tag">scikit-learn</span></span></span>
+            <span class="plus">+</span>
+          </button>
+          <div class="job-body"><div>
+            <ul>
+              <li>Built an automated web scraper to extract and benchmark SEO metrics (word count, readability, keyword density, heading structure) across 10+ competitor pages for a target niche.</li>
+              <li>Applied TF-IDF vectorization to identify high-value content terms and surface keyword gaps, translating findings into a data-backed case study with actionable ranking recommendations.</li>
+              <li>Integrated Google Trends API to track 12-month keyword interest and surface rising related queries, enabling strategic content prioritization.</li>
+            </ul>
+            <a class="link" href="https://github.com/beccachangg/seo-analysis-tool" target="_blank" rel="noopener">view on github ↗</a>
+          </div></div>
+        </article>
+
+        <article class="job compact reveal" style="--d:.08s">
+          <button class="job-head" aria-expanded="false">
+            <span class="job-title"><span class="job-date">jan 2026</span><b>GitHub Analytics Dashboard</b>
+              <span class="chips"><span class="tag">Next.js</span><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Tailwind</span></span></span>
+            <span class="plus">+</span>
+          </button>
+          <div class="job-body"><div>
+            <ul>
+              <li>Developed a full-stack web application analyzing GitHub repository data through interactive visualizations, demonstrating proficiency in modern JavaScript frameworks, API integration, and responsive design principles.</li>
+              <li>Implemented robust error handling, loading states, and data validation across frontend and backend layers, ensuring a reliable user experience when processing external API responses.</li>
+              <li>Applied software engineering best practices, including TypeScript for type safety, component modularity, RESTful API design, and Git version control throughout the development lifecycle.</li>
+            </ul>
+            <a class="link" href="https://analytics-dashboard-alpha-six.vercel.app/" target="_blank" rel="noopener">view live demo ↗</a>
+          </div></div>
+        </article>
+
+        <article class="job compact reveal">
+          <button class="job-head" aria-expanded="false">
+            <span class="job-title"><span class="job-date">dec 2024</span><b>Treble Boost Audio Filter Design</b>
+              <span class="chips"><span class="tag">Circuit design</span><span class="tag">LTSpice</span><span class="tag">Breadboard</span></span></span>
+            <span class="plus">+</span>
+          </button>
+          <div class="job-body"><div><ul>
+            <li>Designed an active op-amp filter circuit achieving 10+ gain (21 dB) in the 300 Hz – 15 kHz range through symbolic analysis and component selection (capacitors: 1000 pF, 100 nF; resistor: 5.1 kΩ).</li>
+            <li>Validated the design using LTSpice simulations and breadboard measurements, with cutoff frequencies within 10% of theoretical predictions.</li>
+          </ul></div></div>
+        </article>
+
+        <article class="job compact reveal" style="--d:.08s">
+          <button class="job-head" aria-expanded="false">
+            <span class="job-title"><span class="job-date">may 2024</span><b>Relational Database Management System (RookieDB)</b>
+              <span class="chips"><span class="tag">Java</span><span class="tag">NoSQL (MongoDB)</span></span></span>
+            <span class="plus">+</span>
+          </button>
+          <div class="job-body"><div><ul>
+            <li>Implemented core DBMS components, including B+ tree indices, join algorithms (hash join, sort-merge join), query optimization with cost-based analysis, and ARIES-based crash recovery.</li>
+            <li>Designed and optimized a multigranularity locking protocol for concurrent transaction execution, reducing query latency through efficient buffer management and eviction policies.</li>
+          </ul></div></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EDUCATION ================= -->
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="edu reveal">
+        <div>
+          <span class="date">2022 – 2026</span>
+          <h3>UC Berkeley</h3>
+          <p style="color:#E8D3B0;margin-top:.6rem">B.S. in Electrical Engineering and Computer Science</p>
+        </div>
+        <div>
+          <h4>clubs</h4>
+          <div class="chips"><span class="tag">CALICO Informatics Competition</span><span class="tag">Society of Women Engineers</span><span class="tag">alpha Kappa Delta Phi</span></div>
+          <h4>coursework</h4>
+          <div class="chips"><span class="tag">EECS 16A + 16B</span><span class="tag">CS 61B Data Structures</span><span class="tag">CS 61C Computer Architecture</span><span class="tag">CS 188 Intro to AI</span><span class="tag">CS 164 Programming Languages &amp; Compilers</span><span class="tag">CS 169A Software Engineering</span></div>
+          <a class="link" style="color:var(--cream-100)" href="coursework.html">see all coursework →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap foot">
+    <a class="logo" href="index.html"><span class="spark">✦</span> rebecca chang</a>
+    <div class="foot-links">
+      <a href="mailto:rchang615@gmail.com">email</a>
+      <a href="https://github.com/beccachangg" target="_blank" rel="noopener">github</a>
+      <a href="https://linkedin.com/in/rebecca-chang-573b2a1b0/" target="_blank" rel="noopener">linkedin</a>
+      <a href="https://instagram.com/itsbeccachang" target="_blank" rel="noopener">instagram</a>
+    </div>
+    <p>© 2026 rebecca chang · berkeley, ca</p>
+  </div>
+</footer>
+</body>
+</html>

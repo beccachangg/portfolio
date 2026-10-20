@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rebecca Chang · Marketing &amp; Content</title>
+  <meta name="description" content="Rebecca Chang — UC Berkeley EECS grad, social media manager and content creator.">
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,400;1,9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- ================= HEADER (same on every page) ================= -->
+<header class="site-header">
+  <a class="logo" href="index.html"><span class="spark">✦</span> rebecca chang</a>
+  <nav class="nav" id="nav">
+    <a href="index.html" class="active">about</a>
+    <a href="resume.html">resume</a>
+    <a href="coursework.html">coursework</a>
+    <a href="marketing.html">marketing</a>
+    <a href="photography.html">photography</a>
+  </nav>
+  <a class="btn btn-solid header-cta" href="mailto:rchang615@gmail.com">say hi ✉</a>
+  <button class="menu-btn" aria-label="menu" aria-expanded="false">☰</button>
+  <div class="progress" id="progress"></div>
+</header>
+
+<main>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="ghost" aria-hidden="true">portfolio</div>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">hi, i'm ✿</span>
+        <h1>rebecca<br><em>chang</em></h1>
+        <p class="role-line">i'm a <span class="word" id="typed" data-words='["social media manager","brand ambassador","data-driven marketer","photographer","berkeley eecs grad"]'>social media manager</span></p>
+        <p class="lead">berkeley eecs grad turning analytics into content that performs. i run organic social for the cal student store, and i shoot grad photos on the side.</p>
+        <div class="btn-row">
+          <a class="btn btn-solid" href="marketing.html">see my marketing work <span class="arr">→</span></a>
+          <a class="btn btn-ghost" href="resume.html">view resume</a>
+        </div>
+      </div>
+
+      <!-- collage: swap the picture holders for your photos -->
+      <div class="collage">
+        <div class="photo arch main" data-label="your best portrait&#10;4:5" data-zoom>
+          <img src="images/IMG_0331-EDIT.jpg" alt="Rebecca Chang">
+        </div>
+        <figure class="polaroid pol-a" style="--rot:-8deg">
+          <div class="photo" data-label="add photo" style="--r:1/1" data-zoom><img src="images/collage-1.jpg" alt=""></div>
+          <figcaption>more of becca</figcaption>
+        </figure>
+        <figure class="polaroid pol-b" style="--rot:7deg">
+          <div class="photo" data-label="add photo" style="--r:4/5" data-zoom><img src="images/collage-2.jpg" alt=""></div>
+          <figcaption>creating</figcaption>
+        </figure>
+        <div class="sticker s1" data-drag style="--rot:-10deg"><b>'26</b><small>cal eecs</small></div>
+        <div class="sticker light s2" data-drag style="--rot:8deg"><b>8</b><small>brand partners</small></div>
+        <span class="note n1">drag the stickers ↓</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MARQUEE ================= -->
+  <div class="marquee-wrap" aria-hidden="true">
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>content strategy ✦</span><span>short-form video ✦</span><span>brand partnerships ✦</span><span>analytics ✦</span><span>seo ✦</span><span>instagram + tiktok ✦</span><span>photography ✦</span><span>campaign planning ✦</span><span>adobe cc · canva · capcut ✦</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= ABOUT (tabs) ================= -->
+  <section class="wash">
+    <div class="wrap" data-tabs>
+      <div class="sec-head reveal">
+        <span class="eyebrow">a little about me</span>
+        <h2>creative brain, <em>technical</em> training</h2>
+      </div>
+
+      <div class="tabs reveal" role="tablist">
+        <button class="chip on" data-tab="creative" role="tab">the creative</button>
+        <button class="chip" data-tab="analytical" role="tab">the analytical</button>
+        <button class="chip" data-tab="human" role="tab">the human</button>
+      </div>
+
+      <div class="tab-panel on" data-panel="creative">
+        <div class="photo" data-label="photo of you creating&#10;4:5" style="--r:4/5" data-zoom><img src="images/about-creative.jpg" alt=""></div>
+        <div>
+          <p>i've made lifestyle, wellness and self-care content — skincare, haircare, fashion — for brands like mario badescu, good molecules, nike and urban outfitters. at the cal student store, i plan and produce the short-form video and static content behind a flagship campus retail brand.</p>
+          <div class="chips"><span class="tag">content calendars</span><span class="tag">short-form video</span><span class="tag">brand partnerships</span></div>
+          <a class="link" href="marketing.html">see the content →</a>
+        </div>
+      </div>
+
+      <div class="tab-panel" data-panel="analytical">
+        <div class="photo" data-label="photo of you working&#10;4:5" style="--r:4/5" data-zoom><img src="images/about-analytical.jpg" alt=""></div>
+        <div>
+          <p>my degree is eecs, so i like proof. i built an seo + competitor analysis tool in python that scrapes 10+ competitor pages, finds keyword gaps with tf-idf and tracks 12 months of google trends, then turns it into a ranking plan. same mindset on social: track what performs and double down.</p>
+          <div class="chips"><span class="tag">python</span><span class="tag">tf-idf</span><span class="tag">google trends</span><span class="tag">performance tracking</span></div>
+          <a class="link" href="resume.html#projects">see the project →</a>
+        </div>
+      </div>
+
+      <div class="tab-panel" data-panel="human">
+        <div class="photo" data-label="a candid / lifestyle shot&#10;4:5" style="--r:4/5" data-zoom><img src="images/about-human.jpg" alt=""></div>
+        <div>
+          <p>off the clock i curate <a class="link" href="https://open.spotify.com/user/5qp0k5wiinv1e2hz8c0b9pyn8?si=b96293a465aa473b" target="_blank" rel="noopener">spotify playlists</a>, hunt for the city's best bites, shoot photos and rewatch studio ghibli. at berkeley i helped write contest problems for the <a class="link" href="https://calico.cs.berkeley.edu/" target="_blank" rel="noopener">calico informatics competition</a> and was involved with <a class="link" href="https://www.akdphi.org/" target="_blank" rel="noopener">alpha kappa delta phi</a> and <a class="link" href="https://tasa.studentorg.berkeley.edu/" target="_blank" rel="noopener">tasa</a>.</p>
+          <div class="chips"><span class="tag">playlists</span><span class="tag">food</span><span class="tag">photography</span><span class="tag">studio ghibli</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHAT I DO (flip cards) ================= -->
+  <section>
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">what i do</span>
+        <h2>four things, <em>one</em> point of view</h2>
+        <p>hover or tap a card to flip it.</p>
+      </div>
+      <div class="cards4">
+        <div class="flip reveal" tabindex="0" style="--d:0s">
+          <div class="flip-inner">
+            <div class="face front"><span class="num">01</span><h3>content<br><em>&amp; social</em></h3><span class="flip-hint">flip ↻</span></div>
+            <div class="face back"><p>monthly content calendars, short-form video, static posts and paid campaigns for the cal student store across instagram and tiktok.</p><a class="link" href="marketing.html">see the work →</a></div>
+          </div>
+        </div>
+        <div class="flip reveal" tabindex="0" style="--d:.1s">
+          <div class="flip-inner">
+            <div class="face front"><span class="num">02</span><h3>brand<br><em>partnerships</em></h3><span class="flip-hint">flip ↻</span></div>
+            <div class="face back"><p>partnerships across skincare, fashion and housing — through creator collabs, and as a student ambassador for ace berkeley and xučyun ruwway.</p><a class="link" href="marketing.html#brands">meet the brands →</a></div>
+          </div>
+        </div>
+        <div class="flip reveal" tabindex="0" style="--d:.2s">
+          <div class="flip-inner">
+            <div class="face front"><span class="num">03</span><h3>analytics<br><em>&amp; seo</em></h3><span class="flip-hint">flip ↻</span></div>
+            <div class="face back"><p>scraping, tf-idf and google trends turned into data-backed content strategy and ranking recommendations.</p><a class="link" href="resume.html#projects">see the project →</a></div>
+          </div>
+        </div>
+        <div class="flip reveal" tabindex="0" style="--d:.3s">
+          <div class="flip-inner">
+            <div class="face front"><span class="num">04</span><h3>photo-<br><em>graphy</em></h3><span class="flip-hint">flip ↻</span></div>
+            <div class="face back"><p>mostly grad shoots — the same eye for composition that shows up in my content.</p><a class="link" href="photography.html">see the gallery →</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GALLERY ================= -->
+  <section>
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">behind the lens</span>
+        <h2>a few <em>frames</em></h2>
+        <p>a few favorites from my grad shoots. <a class="link" href="photography.html">see the full gallery →</a></p>
+      </div>
+      <div class="gallery">
+        <div class="photo reveal" data-label="photo 1&#10;3:4" style="--r:3/4" data-zoom data-gallery="home"><img src="images/photography/grad-01.jpg" alt=""></div>
+        <div class="photo reveal" data-label="photo 2&#10;4:5" style="--r:4/5;--d:.1s" data-zoom data-gallery="home"><img src="images/photography/grad-02.jpg" alt=""></div>
+        <div class="photo reveal" data-label="photo 3&#10;3:4" style="--r:3/4;--d:.2s" data-zoom data-gallery="home"><img src="images/photography/grad-03.jpg" alt=""></div>
+        <div class="photo reveal" data-label="photo 4&#10;4:5" style="--r:4/5;--d:.3s" data-zoom data-gallery="home"><img src="images/photography/grad-04.jpg" alt=""></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <section style="padding-top:0">
+    <div class="cta" style="padding:clamp(56px,9vw,110px) 20px">
+      <span class="eyebrow">let's talk</span>
+      <h2>got a brand that needs <em>great content?</em></h2>
+      <p>i'm open to marketing, content and social roles — and always up for a collab.</p>
+      <div class="btn-row">
+        <button class="btn btn-light" data-copy="rchang615@gmail.com">copy my email ✉</button>
+        <a class="btn btn-outline-light" href="https://linkedin.com/in/rebecca-chang-573b2a1b0/" target="_blank" rel="noopener">linkedin ↗</a>
+        <a class="btn btn-outline-light" href="marketing.html">see my work →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap foot">
+    <a class="logo" href="index.html"><span class="spark">✦</span> rebecca chang</a>
+    <div class="foot-links">
+      <a href="mailto:rchang615@gmail.com">email</a>
+      <a href="https://github.com/beccachangg" target="_blank" rel="noopener">github</a>
+      <a href="https://linkedin.com/in/rebecca-chang-573b2a1b0/" target="_blank" rel="noopener">linkedin</a>
+      <a href="https://instagram.com/itsbeccachang" target="_blank" rel="noopener">instagram</a>
+    </div>
+    <p>© 2026 rebecca chang · berkeley, ca</p>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-label="photo viewer"><button class="lb-close" aria-label="close">✕</button><button class="lb-nav prev" aria-label="previous photo">❮</button><figure><img alt=""><figcaption id="lb-cap"></figcaption></figure><button class="lb-nav next" aria-label="next photo">❯</button></div>
+</body>
+</html>

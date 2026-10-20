@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photography · Rebecca Chang</title>
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,400;1,9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="index.html"><span class="spark">✦</span> rebecca chang</a>
+  <nav class="nav" id="nav">
+    <a href="index.html">about</a>
+    <a href="resume.html">resume</a>
+    <a href="coursework.html">coursework</a>
+    <a href="marketing.html">marketing</a>
+    <a href="photography.html" class="active">photography</a>
+  </nav>
+  <a class="btn btn-solid header-cta" href="mailto:rchang615@gmail.com">say hi ✉</a>
+  <button class="menu-btn" aria-label="menu" aria-expanded="false">☰</button>
+  <div class="progress" id="progress"></div>
+</header>
+
+<main>
+
+  <section class="page-head" style="padding-bottom:clamp(28px,4vw,48px)">
+    <div class="ghost" aria-hidden="true">frames</div>
+    <div class="wrap">
+      <span class="eyebrow">photography</span>
+      <h1>grad <em>shoots</em></h1>
+      <p class="lead">a collection of my grad shoots. hover a photo to see when it was taken, and click to view it larger.</p>
+      <div class="btn-row">
+        <!-- book-a-shoot link: change or delete if you'd rather not have it -->
+        <a class="btn btn-solid" href="https://instagram.com/photosbybca" target="_blank" rel="noopener">book a shoot <span class="arr">↗</span></a>
+        <a class="btn btn-ghost" href="#gallery">jump to the photos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GALLERY =================
+       15 picture holders. Save photos as images/photography/grad-01.jpg ... grad-15.jpg
+       and edit data-date / data-time on each one for the hover caption. -->
+  <section class="wash" id="gallery" style="padding-top:clamp(28px,4vw,48px)">
+    <div class="wrap">
+      <div class="masonry">
+        <figure class="shot reveal" style="--d:.08s"><div class="photo" data-label="grad shoot 01&#10;4:5" style="--r:4/5" data-zoom data-gallery="grad" data-date="may 23, 2026" data-time="7:02 pm"><img src="images/photography/grad-01.jpg" alt="grad shoot photo 01"></div></figure>
+        <figure class="shot reveal" style="--d:.16s"><div class="photo" data-label="grad shoot 02&#10;3:4" style="--r:3/4" data-zoom data-gallery="grad" data-date="may 13, 2026" data-time="5:20 pm"><img src="images/photography/grad-02.jpg" alt="grad shoot photo 02"></div></figure>
+        <figure class="shot reveal" style="--d:.00s"><div class="photo" data-label="grad shoot 03&#10;1:1" style="--r:1/1" data-zoom data-gallery="grad" data-date="dec 18, 2025" data-time="3:12 pm"><img src="images/photography/grad-03.jpg" alt="grad shoot photo 03"></div></figure>
+        <figure class="shot reveal" style="--d:.08s"><div class="photo" data-label="grad shoot 04&#10;2:3" style="--r:2/3" data-zoom data-gallery="grad" data-date="july 19, 2025" data-time="2:14 pm"><img src="images/photography/grad-04.jpg" alt="grad shoot photo 04"></div></figure>
+        <figure class="shot reveal" style="--d:.16s"><div class="photo" data-label="grad shoot 05&#10;4:5" style="--r:4/5" data-zoom data-gallery="grad" data-date="june 13, 2025" data-time="6:07 pm"><img src="images/photography/grad-05.jpg" alt="grad shoot photo 05"></div></figure>
+        <figure class="shot reveal" style="--d:.00s"><div class="photo" data-label="grad shoot 06&#10;3:4" style="--r:3/4" data-zoom data-gallery="grad" data-date="june 4, 2025" data-time="6:16 pm"><img src="images/photography/grad-06.jpg" alt="grad shoot photo 06"></div></figure>
+        <figure class="shot reveal" style="--d:.08s"><div class="photo" data-label="grad shoot 07&#10;4:5" style="--r:4/5" data-zoom data-gallery="grad" data-date="may 21, 2025" data-time="12:22 pm"><img src="images/photography/grad-07.jpg" alt="grad shoot photo 07"></div></figure>
+        <figure class="shot reveal" style="--d:.16s"><div class="photo" data-label="grad shoot 08&#10;1:1" style="--r:1/1" data-zoom data-gallery="grad" data-date="may 10, 2025" data-time="6:10 pm"><img src="images/photography/grad-08.jpg" alt="grad shoot photo 08"></div></figure>
+        <figure class="shot reveal" style="--d:.00s"><div class="photo" data-label="grad shoot 09&#10;3:4" style="--r:3/4" data-zoom data-gallery="grad" data-date="apr 19, 2025" data-time="6:43 pm"><img src="images/photography/grad-09.jpg" alt="grad shoot photo 09"></div></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <section style="padding-top:0">
+    <div class="cta" style="padding:clamp(56px,9vw,110px) 20px">
+      <span class="eyebrow">your turn</span>
+      <h2>want your own <em>grad shoot?</em></h2>
+      <p>send me a message and let's plan it.</p>
+      <div class="btn-row">
+        <a class="btn btn-light" href="https://instagram.com/photosbybca" target="_blank" rel="noopener">@photosbybca ↗</a>
+        <button class="btn btn-outline-light" data-copy="rchang615@gmail.com">copy my email</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap foot">
+    <a class="logo" href="index.html"><span class="spark">✦</span> rebecca chang</a>
+    <div class="foot-links">
+      <a href="mailto:rchang615@gmail.com">email</a>
+      <a href="https://github.com/beccachangg" target="_blank" rel="noopener">github</a>
+      <a href="https://linkedin.com/in/rebecca-chang-573b2a1b0/" target="_blank" rel="noopener">linkedin</a>
+      <a href="https://instagram.com/itsbeccachang" target="_blank" rel="noopener">instagram</a>
+    </div>
+    <p>© 2026 rebecca chang · berkeley, ca</p>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-label="photo viewer"><button class="lb-close" aria-label="close">✕</button><button class="lb-nav prev" aria-label="previous photo">❮</button><figure><img alt=""><figcaption id="lb-cap"></figcaption></figure><button class="lb-nav next" aria-label="next photo">❯</button></div>
+</body>
+</html>

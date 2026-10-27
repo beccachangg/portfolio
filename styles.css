@@ -355,6 +355,27 @@ html.js .reveal.in{opacity:1;transform:none}
 @media (max-width:900px){.masonry{columns:2}}
 @media (max-width:420px){.masonry{column-gap:.7rem}.shot{margin-bottom:.7rem}}
 
+
+/* ---------- case study + infinite post loop (marketing) ---------- */
+.case-head{display:grid;grid-template-columns:minmax(220px,.8fr) 2fr;gap:clamp(20px,4vw,64px);align-items:start;margin-bottom:clamp(24px,3vw,40px)}
+.case-title{font-size:clamp(2rem,4vw,3rem);margin-top:.7rem}
+.ig{display:inline-grid;place-items:center;vertical-align:middle;margin-left:.7rem;color:var(--brown);transition:transform .25s,color .25s}
+.ig:hover{color:var(--espresso);transform:translateY(-2px) rotate(-6deg)}
+.case-meta{margin-top:.8rem;color:var(--mocha);font-weight:500;line-height:1.6}
+.case-desc{font-size:clamp(1.05rem,1.5vw,1.2rem);color:#4d3b3b;margin-bottom:1.1rem;max-width:42rem}
+.loop-wrap{position:relative}
+.loop{overflow-x:auto;overflow-y:hidden;padding:1.2rem 0 1.8rem;scrollbar-width:none;overscroll-behavior-x:contain;-webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
+.loop::-webkit-scrollbar{display:none}
+.loop-track{display:flex;width:max-content}
+.loop-btn{position:absolute;top:50%;margin-top:-26px;z-index:5;width:48px;height:48px;border-radius:50%;border:1.5px solid var(--line);background:rgba(255,250,240,.95);color:var(--espresso);font-size:1.2rem;cursor:pointer;box-shadow:var(--shadow);transition:background .25s,color .25s,transform .25s}
+.loop-btn:hover{background:var(--espresso);color:var(--cream-100);transform:scale(1.06)}
+.loop-btn.prev{left:clamp(10px,3vw,40px)}
+.loop-btn.next{right:clamp(10px,3vw,40px)}
+.post{flex:0 0 clamp(200px,21vw,270px);margin:0 1.1rem 0 0}
+.post .photo{--rad:16px;box-shadow:var(--shadow);transition:transform .35s}
+.post .photo:hover{transform:translateY(-6px)}
+@media (max-width:760px){.case-head{grid-template-columns:1fr}}
+
 /* ---------- responsive ---------- */
 @media (max-width:1000px){
   .cards4{grid-template-columns:repeat(2,1fr)}

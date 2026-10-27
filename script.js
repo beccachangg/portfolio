@@ -29,6 +29,42 @@
     $$('#nav a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
   }
 
+  /* ---- looping post carousel: manual scroll + arrows, wraps around forever ---- */
+  $$('.loop').forEach(box => {
+    const t = $('.loop-track', box);
+    const items = [...t.children];
+    const reps = Math.max(1, Math.ceil(box.clientWidth / (t.scrollWidth || 1)));
+    const unit = [...items];
+    for (let r = 1; r < reps; r++) items.forEach(c => { const k = c.cloneNode(true); t.appendChild(k); unit.push(k); });
+    [...unit].reverse().forEach(c => t.insertBefore(c.cloneNode(true), t.firstChild));
+    unit.forEach(c => t.appendChild(c.cloneNode(true)));
+    const real = new Set(items);
+    [...t.children].filter(c => !real.has(c)).forEach(c => {
+      c.setAttribute('aria-hidden', 'true');
+      c.querySelectorAll('img').forEach(i => { i.alt = ''; });
+    });
+
+    const S = t.scrollWidth / 3;          // width of one full set
+    box.scrollLeft = S;                   // start on the middle set
+    let busy = false, timer;
+    const wrap = () => {
+      const x = box.scrollLeft;
+      if (x < S * 0.5) box.scrollLeft = x + S;
+      else if (x > S * 1.5) box.scrollLeft = x - S;
+    };
+    box.addEventListener('scroll', () => { if (!busy) wrap(); }, { passive: true });
+    const go = dir => {
+      if (busy) return;
+      busy = true;
+      box.scrollBy({ left: dir * Math.round(box.clientWidth * 0.8), behavior: 'smooth' });
+      clearTimeout(timer);
+      timer = setTimeout(() => { busy = false; wrap(); }, 600);
+    };
+    const wrapper = box.parentElement;
+    $('.prev', wrapper)?.addEventListener('click', () => go(-1));
+    $('.next', wrapper)?.addEventListener('click', () => go(1));
+  });
+
   /* ---- picture holders: if the image file isn't there, keep the placeholder ---- */
   $$('.photo img').forEach(img => {
     const holder = img.parentElement;

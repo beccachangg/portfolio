@@ -411,7 +411,14 @@ html.js .reveal.in{opacity:1;transform:none}
   html{scroll-behavior:auto}
 }
 .video-story { position: relative; overflow: hidden; }
-.video-story video { width: 100%; height: 100%; object-fit: cover; display: block; }
+.video-story video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .sound-btn {
   position: absolute; right: 10px; bottom: 10px;
   width: 38px; height: 38px; border-radius: 50%;

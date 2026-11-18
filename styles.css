@@ -410,3 +410,13 @@ html.js .reveal.in{opacity:1;transform:none}
   html.js .reveal{opacity:1;transform:none}
   html{scroll-behavior:auto}
 }
+.video-story { position: relative; overflow: hidden; }
+.video-story video { width: 100%; height: 100%; object-fit: cover; display: block; }
+.sound-btn {
+  position: absolute; right: 10px; bottom: 10px;
+  width: 38px; height: 38px; border-radius: 50%;
+  border: 0; cursor: pointer; font-size: 16px;
+  background: rgba(0,0,0,.55); color: #fff;
+  backdrop-filter: blur(6px);
+}
+.sound-btn:hover { background: rgba(0,0,0,.75); }

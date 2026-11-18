@@ -298,3 +298,21 @@
     });
   }
 })();
+
+document.querySelectorAll('.video-story').forEach(box => {
+  const v = box.querySelector('video');
+  const btn = box.querySelector('.sound-btn');
+
+  btn.addEventListener('click', () => {
+    v.muted = !v.muted;
+    btn.textContent = v.muted ? '🔇' : '🔊';
+    btn.setAttribute('aria-pressed', String(!v.muted));
+    btn.setAttribute('aria-label', v.muted ? 'turn sound on' : 'turn sound off');
+  });
+
+  // play only while visible; re-mute when it scrolls away
+  new IntersectionObserver(([e]) => {
+    if (e.isIntersecting) v.play().catch(() => {});
+    else { v.pause(); v.muted = true; btn.textContent = '🔇'; btn.setAttribute('aria-pressed', 'false'); }
+  }, { threshold: 0.5 }).observe(box);
+});
